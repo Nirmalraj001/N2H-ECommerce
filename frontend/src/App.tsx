@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
 import { CartProvider } from './contexts/CartContext';
 import { ToastProvider } from './components/ui/Toast';
+import { ToastContainer } from './components/ui/ToastContainer';
 import { ProtectedRoute } from './components/ProtectedRoute';
 import { ScrollToTop } from './components/ScrollToTop';
 import { AppShell } from './components/layout/AppShell';
@@ -33,6 +34,7 @@ function App() {
       <AuthProvider>
         <CartProvider>
           <ToastProvider>
+            <ToastContainer />
             <Routes>
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
