@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { X, CheckCircle, AlertCircle, Info } from 'lucide-react';
+import { X, CircleCheck as CheckCircle, CircleAlert as AlertCircle, Info } from 'lucide-react';
 import { useAppDispatch, useAppSelector } from '../../store/hooks';
 import { hideToast } from '../../store/slices/uiSlice';
 
